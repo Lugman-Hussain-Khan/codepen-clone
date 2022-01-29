@@ -1,4 +1,5 @@
 import { createContext, useState } from "react"
+import demoSrcDoc from "./utils/demoSrcDoc"
 
 export const PlaygroundContext = createContext()
 
@@ -7,7 +8,7 @@ const PlyagroundContextProvider = ({ children }) => {
   const [css, setCss] = useState("")
   const [js, setJs] = useState("")
 
-  const [srcDoc, setSrcDoc] = useState("")
+  const [srcDoc, setSrcDoc] = useState(demoSrcDoc)
 
   const value = {
     html,

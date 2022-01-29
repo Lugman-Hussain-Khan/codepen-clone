@@ -24,3 +24,9 @@
 .react-codemirror2 {
   height: calc(100% - 2rem);
 }
+
+.preview-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
